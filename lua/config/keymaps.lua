@@ -26,12 +26,6 @@ vim.keymap.set("n", "gr", "<cmd>lua vim.lsp.buf.references()<cr>", opts)
 vim.keymap.set("n", "gs", "<cmd>lua vim.lsp.buf.signature_help()<cr>", opts)
 vim.keymap.set("n", "<F2>", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
 
--- Tmux navigate
-vim.keymap.set("n", "<M-Left>", ":TmuxNavigateLeft<cr>", { silent = true })
-vim.keymap.set("n", "<M-Down>", ":TmuxNavigateDown<cr>", { silent = true })
-vim.keymap.set("n", "<M-Up>", ":TmuxNavigateUp<cr>", { silent = true })
-vim.keymap.set("n", "<M-Right>", ":TmuxNavigateRight<cr>", { silent = true })
-
 -- git-wroktree
 -- vim.g.git_worktree = {
 -- 	change_directory_command = "cd",

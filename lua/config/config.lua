@@ -1,3 +1,4 @@
+vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 vim.g.tmux_navigator_no_mappings = 1
@@ -27,3 +28,6 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 vim.g.python3_host_prog = "/opt/homebrew/bin/python3.9"
 vim.keymap.set("n", "-", ":Neotree filesystem reveal left<CR>")
+-- vim.keymap.set("n", "-", ":NvimTreeToggle<CR>")
+-- vim.g.ansible_unindent_after_newline = 0
+vim.g.ansible_ftdetect_filename_regex = "\v(playbook|site|main|hosts|hosts2|requirements).ya?ml$"
